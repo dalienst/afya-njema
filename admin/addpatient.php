@@ -16,7 +16,7 @@ if($ql)
     echo "<script>alert('Patients added successfully');</script>";
 }
 mysqli_query($con, $ql);
-header("location:login.php");
+header("location:patient.php");
 }
 ?>
 
@@ -27,16 +27,82 @@ header("location:login.php");
         name="viewport"
         charset="UTF=8"
         http-equiv="Content-Type">
-    <title>Patient Registration</title>
+        <title>Admin Section</title>
         <!---Bootstrap 5.1.3--->
-    <link rel="stylesheet" href="css/bootstrap-5.1.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/admin.css"
+        <link rel="stylesheet" href="css/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+        <!--css file-->
+        <link rel="stylesheet" href="css/doc.css"> 
+        <!--<script type="text/javascript">
+            function valid()
+            {
+                if(document.adddoc.password.value!=document.adddoc.cpassword.value){
+                    alert("Passwords do not match!!");
+                    document.adddoc.cpassword.focus();
+                    return false;
+                }
+                return true;
+            }
+        </script>-->
     </head>
     <body>
-        <form action="register.php" method="POST">
-            <div class="card">
+    <div class="sidebar">
+            <div class="sidebar-title">
+                <h2>Admin</h2>
+            </div>
+            <hr>
+            <div class="sidebar-menu">
+                <ul class="listItems">
+                    <li>
+                        <a href="dashboard.php">
+                            <!--add icon using span-->
+                            Dashboard
+                        </a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="doctor.php">
+                            <!--add icon using span-->
+                            Doctors
+                        </a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="addoctor.php">
+                            <!--add icon using span-->
+                            Add Doctor
+                        </a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="patient.php">
+                            <!--add icon using span-->
+                            Patients
+                        </a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="addpatient.php">
+                            <!--add icon using span-->
+                            Add Patient
+                        </a>
+                    </li>
+                    <hr>
+                </ul>
+            </div>
+    </div>
+
+    <div class="main">
+        <header>
+            <h2>
+            <!--<label for=""><span></span</label> add icon-->
+                Add Patient
+            </h2>
+        </header>
+        <section class="home">
+            <form action="addpatient.php" method="POST">
+                <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Patient Registration</h5>
+                    <h5 class="card-title">Register New Patient</h5>
                     <hr>
                     <div class="row g-3">
                         <!-- Names-->
@@ -45,19 +111,18 @@ header("location:login.php");
                             <input type="text" class="form-control" name="fullname" id="fullname">
                         </div>
 
+                        <!--email and residence-->
                         <div class="col-md-6">
-                            <label for="patEmail" class="form-label">Email</label>
+                            <label for="docEmail" class="form-label">Email</label>
                             <input type="email" class="form-control" id="email" name="email"> 
                         </div>
-
-                        
                         <div class="col-md-6">
                             <label for="residence" class="form-label">Residence</label>
                             <input type="text" class="form-control" id="residence" name="residence"> 
                         </div>
                         <div class="col-md-6">
                             <label for="contact" class="form-label">Contact</label>
-                            <input type="text" class="form-control" id="contact" name="contact"> 
+                            <input type="text" class="form-control" id="contact" name="contact">
                         </div>
 
                         <div class="col-md-6">
@@ -79,14 +144,12 @@ header("location:login.php");
                             </div>
                         </div>
 
-                        <button type="submit" name="btn" class="btn btn-primary mb-3">REGISTER PATIENT</button> 
-                        
-                        <div class="text-center mb-3">
-                            <a href="login.php">Already have an accout? Log in here</a>
-                        </div>                        
+                        <button type="submit" name="btn" class="btn btn-primary mb-3">REGISTER PATIENT</button>                       
                     </div>
                 </div>
-            </div>
-        </form>
+                </div>
+            </form>
+        </section>
+    </div>
     </body>
 </html>
