@@ -5,14 +5,14 @@ if(isset($_POST["btn"])){
 include('connect.php');
 $docspeciality=$_POST['specialization'];
 $docname=$_POST['fullName'];
-$docemail=$_POST['docEmail'];
+$email=$_POST['email'];
 $docresidence=$_POST['residence'];
 $docphone=$_POST['contact'];
 $docfees=$_POST['docFees'];
-$password=md5($_POST['password']);
-$cpassword=md5($_POST['cpassword']);
+$password=$_POST['password'];
+$cpassword=$_POST['cpassword'];
 $gender=$_POST['gender'];
-$sql=("insert into doctors(specialization,fullname,docEmail,residence,contact,docFees,password,cpassword,gender) values('$docspeciality','$docname','$docemail','$docresidence','$docphone','$docfees','$password','$cpassword','$gender')");
+$sql=("insert into doctors(specialization,fullname,email,residence,contact,docFees,password,cpassword,gender) values('$docspeciality','$docname','$email','$docresidence','$docphone','$docfees','$password','$cpassword','$gender')");
 if($sql)
 {
     echo "<script>alert('Doctor info added successfully');</script>";
@@ -89,6 +89,20 @@ header("location:doctor.php");
                         </a>
                     </li>
                     <hr>
+                    <li>
+                        <a href="pharmacists.php">
+                            <!--add icon using span-->
+                            Pharmacists
+                        </a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="receptionists.php">
+                            <!--add icon using span-->
+                            Receptionists
+                        </a>
+                    </li>
+                    <hr>
                 </ul>
             </div>
     </div>
@@ -119,8 +133,8 @@ header("location:doctor.php");
 
                         <!--email and residence-->
                         <div class="col-md-6">
-                            <label for="docEmail" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="docEmail" name="docEmail"> 
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email"> 
                         </div>
                         <div class="col-md-6">
                             <label for="residence" class="form-label">Residence</label>

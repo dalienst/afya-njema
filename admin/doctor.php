@@ -61,6 +61,20 @@ $con->close();
                         </a>
                     </li>
                     <hr>
+                    <li>
+                        <a href="pharmacists.php">
+                            <!--add icon using span-->
+                            Pharmacists
+                        </a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="receptionists.php">
+                            <!--add icon using span-->
+                            Receptionists
+                        </a>
+                    </li>
+                    <hr>
                 </ul>
             </div>
         </div>
@@ -108,7 +122,7 @@ $con->close();
                                     ?>
                                     <tr>
                                         <td><?php echo $rows['fullname'];?></td>
-                                        <td><?php echo $rows['docEmail'];?></td>
+                                        <td><?php echo $rows['email'];?></td>
                                         <td><?php echo $rows['contact'];?></td>
                                         <td><?php echo $rows['specialization'];?></td>
                                         <td><?php echo $rows['docFees'];?></td>

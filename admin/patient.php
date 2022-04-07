@@ -61,6 +61,20 @@ $con->close();
                         </a>
                     </li>
                     <hr>
+                    <li>
+                        <a href="pharmacists.php">
+                            <!--add icon using span-->
+                            Pharmacists
+                        </a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="receptionists.php">
+                            <!--add icon using span-->
+                            Receptionists
+                        </a>
+                    </li>
+                    <hr>
                 </ul>
             </div>
         </div>

@@ -87,6 +87,20 @@ header("location:patient.php");
                         </a>
                     </li>
                     <hr>
+                    <li>
+                        <a href="pharmacists.php">
+                            <!--add icon using span-->
+                            Pharmacists
+                        </a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="receptionists.php">
+                            <!--add icon using span-->
+                            Receptionists
+                        </a>
+                    </li>
+                    <hr>
                 </ul>
             </div>
     </div>
@@ -113,7 +127,7 @@ header("location:patient.php");
 
                         <!--email and residence-->
                         <div class="col-md-6">
-                            <label for="docEmail" class="form-label">Email</label>
+                            <label for="email" class="form-label">Email</label>
                             <input type="email" class="form-control" id="email" name="email"> 
                         </div>
                         <div class="col-md-6">

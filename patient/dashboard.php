@@ -1,8 +1,3 @@
-<?php
-include('session.php');
-
-?>
-
 <html>
     <head>
     <meta content="width=device-width, initial-scale=1.0"
@@ -62,12 +57,12 @@ include('session.php');
                     Dashboard
                 </h1>
                 <div class="lout">
-                    <a href="login.php" class="btn btn-danger">LOG OUT</a>
+                    <a href="logout.php" class="btn btn-danger">LOG OUT</a>
                 </div>
             </header>
             <section class="home">
                 <div class="row">
-                    <div class="col-sm-6">
+                    <!--<div class="col-sm-6">
                         <div class="card">
                             <div class="card-header">Patient Profile</div>
                             <div class="card-body">
@@ -80,7 +75,7 @@ include('session.php');
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                     <div class="col-sm-6">
                         <div class="card mb-3">
                             <!--<div class="card-header">Patient Health Profile</div>-->
@@ -95,7 +90,7 @@ include('session.php');
                             <div class="card-body">
                                 <h5 class="card-title">Treatment History</h5>
                                 <p class="card-text">Click the Button below to access your treatment history.</p>
-                                <a href="#" class="btn btn-danger">HISTORY</a>
+                                <a href="treatment.php" class="btn btn-danger">HISTORY</a>
                             </div>
                         </div>
                     </div>

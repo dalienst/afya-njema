@@ -1,3 +1,8 @@
+<?php
+include('session.php');
+
+?>
+
 <html>
     <head>
     <meta content="width=device-width, initial-scale=1.0"
@@ -26,16 +31,16 @@
                     </li>
                     <hr>
                     <li>
-                        <a href="#">
+                        <a href="appointment.php">
                             <!--add icon using span-->
                             Appointments
                         </a>
                     </li>
                     <hr>
                     <li>
-                        <a href="#">
+                        <a href="patients.php">
                             <!--add icon using span-->
-                            Profile
+                            Patients
                         </a>
                     </li>
                     <hr>
@@ -50,22 +55,18 @@
                     Dashboard
                 </h1>
                 <div class="lout">
-                    <a href="dashboard.php" class="btn btn-warning">LOG OUT</a>
+                    <a href="logout.php" class="btn btn-warning">LOG OUT</a>
                 </div>
             </header>
             <section class="home">
-            <div class="row">
+                <div class="row">
                     <div class="col-sm-6">
-                        <div class="card">
-                            <div class="card-header">Patient Profile</div>
+                        <div class="card mb-3">
+                            <!--<div class="card-header">Patient Health Profile</div>-->
                             <div class="card-body">
-                                <h5 class="card-title">Patient Details</h5>
-                                <div class="list-group list -group-flush">
-                                    <li class="list-group-item">Name:</li>
-                                    <li class="list-group-item">Contact:</li>
-                                    <li class="list-group-item">Email:</li>
-                                    <li class="list-group-item">Residence:</li>
-                                </div>
+                                <h5 class="card-title">Check Appointment</h5>
+                                <p class="card-text">Click the Button below to check Appointments.</p>
+                                <a href="appointment.php" class="btn btn-warning">CHECK HERE</a>
                             </div>
                         </div>
                     </div>
@@ -73,17 +74,9 @@
                         <div class="card mb-3">
                             <!--<div class="card-header">Patient Health Profile</div>-->
                             <div class="card-body">
-                                <h5 class="card-title">Book Appointment</h5>
-                                <p class="card-text">Click the Button below to book an appointment.</p>
-                                <a href="appointment.php" class="btn btn-warning">BOOK HERE</a>
-                            </div>
-                        </div>
-                        <div class="card mb-3">
-                            <!--<div class="card-header">Patient Treatment History</div>-->
-                            <div class="card-body">
-                                <h5 class="card-title">Treatment History</h5>
-                                <p class="card-text">Click the Button below to access your treatment history.</p>
-                                <a href="#" class="btn btn-warning">HISTORY</a>
+                                <h5 class="card-title">View Patients</h5>
+                                <p class="card-text">Click the Button below to view patients.</p>
+                                <a href="patients.php" class="btn btn-warning">CHECK HERE</a>
                             </div>
                         </div>
                     </div>

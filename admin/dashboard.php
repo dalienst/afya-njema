@@ -58,6 +58,20 @@ include('session.php');
                         </a>
                     </li>
                     <hr>
+                    <li>
+                        <a href="pharmacists.php">
+                            <!--add icon using span-->
+                            Pharmacists
+                        </a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="receptionists.php">
+                            <!--add icon using span-->
+                            Receptionists
+                        </a>
+                    </li>
+                    <hr>
                 </ul>
             </div>
         </div>
@@ -74,6 +88,48 @@ include('session.php');
             </header>
             <section class="home">
                 <!--code here-->
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card mb-3">
+                            <!--<div class="card-header">Patient Health Profile</div>-->
+                            <div class="card-body">
+                                <h5 class="card-title">Add Doctor</h5>
+                                <p class="card-text">Click the Button below to add new Doctor.</p>
+                                <a href="addoctor.php" class="btn btn-primary">NEW DOCTOR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card mb-3">
+                            <!--<div class="card-header">Patient Health Profile</div>-->
+                            <div class="card-body">
+                                <h5 class="card-title">Add Patients</h5>
+                                <p class="card-text">Click the Button below to add patients.</p>
+                                <a href="patients.php" class="btn btn-primary">NEW PATIENT</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card mb-3">
+                            <!--<div class="card-header">Patient Health Profile</div>-->
+                            <div class="card-body">
+                                <h5 class="card-title">Add Receptionist</h5>
+                                <p class="card-text">Click the Button below to add new Receptionist.</p>
+                                <a href="addrecep.php" class="btn btn-primary">NEW RECEPTIONIST</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card mb-3">
+                            <!--<div class="card-header">Patient Health Profile</div>-->
+                            <div class="card-body">
+                                <h5 class="card-title">Add Pharmacist</h5>
+                                <p class="card-text">Click the Button below to add new Pharmacist.</p>
+                                <a href="addpharm.php" class="btn btn-primary">NEW PHARMACIST</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
     </body>

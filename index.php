@@ -56,16 +56,16 @@
                           <a href="admin/login.php" class="btn btn-lg btn-secondary fw-bold border-white bg-white">SIGN IN</a>
                       </div>
                   </div>
-                  <!--<div class="col d-flex align-items-start">
-                      <div class="icon-square bg-light text-dar flex-shrink-0 me-3">
+                  <div class="col d-flex align-items-start">
+                      <!--<div class="icon-square bg-light text-dar flex-shrink-0 me-3">
                             add icons for admin
-                      </div>
+                      </div>-->
                       <div>
                           <h2>Receptionist</h2>
                           <p>Receptionist sign in by clicking the button below</p>
-                          <a href="#" class="btn btn-primary mb-3">SIGN IN</a>
+                          <a href="receptionist/login.php" class="btn btn-lg btn-secondary fw-bold border-white bg-white">SIGN IN</a>
                       </div>
-                  </div>-->
+                  </div>
                   <div class="col d-flex align-items-start">
                       <!--<div class="icon-square bg-light text-dar flex-shrink-0 me-3">
                             add icons for admin
@@ -81,9 +81,29 @@
                             add icons for admin
                       </div>-->
                       <div>
+                          <h2>Guest</h2>
+                          <p>Book an appointment here</p>
+                          <a href="book.php" class="btn btn-lg btn-secondary fw-bold border-white bg-white">BOOK</a>
+                      </div>
+                  </div>
+                  <div class="col d-flex align-items-start">
+                      <!--<div class="icon-square bg-light text-dar flex-shrink-0 me-3">
+                            add icons for admin
+                      </div>-->
+                      <div>
                           <h2>Doctor</h2>
                           <p>Doctors sign in by clicking the button below</p>
                           <a href="doctor/login.php" class="btn btn-lg btn-secondary fw-bold border-white bg-white">SIGN IN</a>
+                      </div>
+                  </div>
+                  <div class="col d-flex align-items-start">
+                      <!--<div class="icon-square bg-light text-dar flex-shrink-0 me-3">
+                            add icons for admin
+                      </div>-->
+                      <div>
+                          <h2>Pharmacist</h2>
+                          <p>Pharmacist sign in by clicking the button below</p>
+                          <a href="pharmacist/login.php" class="btn btn-lg btn-secondary fw-bold border-white bg-white">SIGN IN</a>
                       </div>
                   </div>
               </div>
